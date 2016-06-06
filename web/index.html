@@ -5,33 +5,39 @@
     <title>Test form validation</title>
     <script src="/js/lib/jquery-2.2.3.min.js"></script>
     <script src="/js/lib/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="/img/homework.png" class="pull-left logo">
+            <a class="navbar-brand" href="index.html">Homework</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li><a href="simple.html">Hello Google Maps</a></li>
+            <li><a href="form.html">Валидация формы</a></li>
+            <li><a href="guitars.html">Раздел про гитары</a></li>
+            <li><a href="ex3.html">Домашнее задание №3</a></li>
+            <li><a href="restaurants.html">Обработка открытых данных</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
-    <form id="mainForm" method="post" novalidate>
-        <div class="form-group">
-            <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email" name="email">
-        </div>
-        <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" name="pwd">
-        </div>
-        <div class="form-group">
-            <label for="number">Random number:</label>
-            <input type="text" class="form-control" id="number" name="number">
-        </div>
-        <div class="form-group">
-            <label for="date">Date of birth:</label>
-            <input type="text" class="form-control" id="date" name="date">
-        </div>
-        <button type="button" class="btn btn-default" id="submit">Submit</button>
-        <div class="alert" id="info"></div>
-    </form>
+    <div class="page-header">
+        <h1>Домашнее задание
+            <small>Сорокин А.Г. гр P3355</small>
+        </h1>
+    </div>
+    <p class="lead">Добро пожаловать!</p>
+    <p>Здесь представлены выполненные в рамках дисциплины Web-технологии работы.</p>
+    <p>Для изучения Java могу порекомендовать отличную книгу: <strong>Bruce Eckel's Thinking in Java</strong></p>
+    <p>Исходный код опубликован в <a href="https://github.com/sorokinandrey/Homework">репозитории</a> на github</p>
+    <p>И для заполнения пустого места вставлю картинку</p>
+    <img class="img-responsive" src="img/java.png">
 </div>
 </body>
 </html>

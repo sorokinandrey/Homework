@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Гитары</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/lib/jquery-2.2.3.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="/img/logo.png" class="pull-left logo">
+            <a class="navbar-brand" href="index.html">Homework</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Вернуться к заданиям</a></li>
+            <li><a href="guitars.html">Главная</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">Конструкция <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="construction/acoustic.html">Акустическая гитара</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="construction/electric.html">Электрогитара</a></li>
+                </ul>
+            </li>
+            <li><a href="styles.html">Техника игры</a></li>
+            <li class="active"><a href="#">Тюнер</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="tuner">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+                width="680" height="480" id="tuner" align="middle">
+            <param name="allowScriptAccess" value="sameDomain"/>
+            <param name="movie" value="http://www-ecs.jamplay.com/client/global/flash/tools/JamPlay-Guitar-Tuner.swf"/>
+            <param name="quality" value="high"/>
+            <param name="wmode" value="transparent"/>
+            <param name="bgcolor" value="#000000"/>
+            <embed class="center-block"
+                   src="http://www-ecs.jamplay.com/client/global/flash/tools/JamPlay-Guitar-Tuner.swf" quality="high"
+                   bgcolor="#333333" wmode="transparent" width="680" height="480" name="tuner" align="middle"
+                   allowScriptAccess="sameDomain" type="application/x-shockwave-flash"
+                   pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+        </object>
+    </div>
+</div>
+</body>
+</html>

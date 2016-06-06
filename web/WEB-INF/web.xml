@@ -7,8 +7,24 @@
         <servlet-name>ValidatorServlet</servlet-name>
         <servlet-class>servlets.ValidatorServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DataParserServlet</servlet-name>
+        <servlet-class>servlets.DataParserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BasicServlet</servlet-name>
+        <servlet-class>servlets.BasicServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidatorServlet</servlet-name>
-        <url-pattern>validate</url-pattern>
+        <url-pattern>/validate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DataParserServlet</servlet-name>
+        <url-pattern>/data</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BasicServlet</servlet-name>
+        <url-pattern>/basic</url-pattern>
     </servlet-mapping>
 </web-app>
