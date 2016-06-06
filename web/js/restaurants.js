@@ -12,10 +12,13 @@ $(function () {
                 excludedIndices.push(header[excluded[i]]);
             }
             drawTable("#restaurants", data["restaurants"], excludedIndices, headerArray);
-            $('#restaurants').dataTable();
+            $('#restaurants').dataTable( {
+                language: {
+                    url: '/js/lib/DataTables/Russian.json'
+                }
+            } );
             putMarkers(data);
         });
-
 
     function drawTable(id, rows, excludedIndices, headerArray) {
         var thead = $("<thead />");
